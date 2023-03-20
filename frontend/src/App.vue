@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="w-full h-screen bg-black">
+  <div class="max-w-[1920px] h-screen bg-black">
     <MainSection />
     <SecondSection />
     <ThirtSection />

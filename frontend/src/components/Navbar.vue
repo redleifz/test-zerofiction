@@ -1,6 +1,6 @@
 <template lang="">
-  <div>
-    <div class="w-full absolute h-[150px] flex items-center">
+  <div class="">
+    <div class="absolute h-[150px] flex items-center m-0 p-0">
       <div class="flex items-center">
         <div>
           <img class="pl-[173px] pr-5" src="../assets/logo.png" />

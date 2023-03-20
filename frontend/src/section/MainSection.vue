@@ -12,7 +12,7 @@ export default {
 <template lang="">
   <div class="h-screen w-full flex justify-center">
     <Navbar />
-    <div class="px-[312px] flex justify-center pt-[328px]">
+    <div class="w-[80%] flex justify-center pt-[328px]">
       <div class="flex flex-col w-[552px] w-[40%]">
         <span class="uppercase text-[96px] font-bold text-white">Lorem</span>
         <span class="uppercase text-[96px] font-bold text-[#D9EF0C]"
