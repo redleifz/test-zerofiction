@@ -2,6 +2,7 @@
 import MainSection from "./section/MainSection.vue";
 import SecondSection from "./section/SecondSection.vue";
 import ThirtSection from "./section/ThirtSection.vue";
+import FourthSection from "./section/FourthSection.vue";
 
 export default {
   name: "App",
@@ -9,6 +10,7 @@ export default {
     MainSection,
     SecondSection,
     ThirtSection,
+    FourthSection
   },
 };
 </script>
@@ -18,5 +20,6 @@ export default {
     <MainSection />
     <SecondSection />
     <ThirtSection />
+    <FourthSection />
   </div>
 </template>

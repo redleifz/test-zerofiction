@@ -3,7 +3,7 @@
     <div class="mt-[128px]">
       <span class="text-black font-bold text-[82px]">LOREM IPSUM</span>
     </div>
-    <div class="flex w-full justify-between mt-[64px] px-[312px]">
+    <div class="flex justify-center gap-[24px] w-[90%] mt-[64px]">
       <ProductCard />
       <ProductCard />
       <ProductCard />
