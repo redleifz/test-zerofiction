@@ -7,9 +7,6 @@
       <div v-for="item in items" :key="item.title">
         <ProductCard :item="item" />
       </div>
-      <!-- <div v-for="item in items" :key="item.title">
-        <ProductCard :item="item" />
-      </div> -->
     </div>
   </div>
 </template>
@@ -38,17 +35,6 @@ export default {
         console.log(error);
       });
   },
-  // computed: {
-  //   childProps() {
-  //     return this.items.map((item) => ({
-  //       title: item.title,
-  //       description: item.description,
-  //       image: item.images,
-  //     }));
-  //   },
-  // },
 };
-
-// https://dummyjson.com/products?limit=3 )
 </script>
 <style lang=""></style>

@@ -10,8 +10,13 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faCalendarDays,
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 /* add icons to the library */
-library.add(faAngleDown);
+library.add(faAngleDown, faCalendarDays, faChevronRight, faChevronLeft);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
