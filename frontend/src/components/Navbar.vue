@@ -12,7 +12,15 @@
       </div>
       <div class="text-white text-[18px] flex flex-cols">
         <span class="pr-10">LOREM</span>
-        <span class="pr-10">LOREM</span>
+        <div>
+          <span class="">LOREM</span>
+          <font-awesome-icon
+            icon="fa-solid fa-angle-down"
+            style="color: #ffffff"
+            class="pr-10"
+          />
+        </div>
+
         <span class="pr-10">LOREMIPSUM</span>
         <span class="pr-10">LOREM & IPSUM</span>
         <span>LOREM</span>

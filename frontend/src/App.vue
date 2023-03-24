@@ -4,6 +4,8 @@ import SecondSection from "./section/SecondSection.vue";
 import ThirtSection from "./section/ThirtSection.vue";
 import FourthSection from "./section/FourthSection.vue";
 
+
+
 export default {
   name: "App",
   components: {

@@ -4,19 +4,51 @@
       <span class="text-black font-bold text-[82px]">LOREM IPSUM</span>
     </div>
     <div class="flex justify-center gap-[24px] w-[90%] mt-[64px]">
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+      <div v-for="item in items" :key="item.title">
+        <ProductCard :item="item" />
+      </div>
+      <!-- <div v-for="item in items" :key="item.title">
+        <ProductCard :item="item" />
+      </div> -->
     </div>
   </div>
 </template>
 <script>
 import ProductCard from "../components/ProductCard.vue";
+import axios from "axios";
+
 export default {
   name: "ThirtSection",
   components: {
     ProductCard,
   },
+  data() {
+    return {
+      items: [],
+    };
+  },
+  mounted() {
+    axios
+      .get(`https://dummyjson.com/products?limit=3`)
+      .then((response) => {
+        this.items = response.data.products;
+        console.log(this.items);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  },
+  // computed: {
+  //   childProps() {
+  //     return this.items.map((item) => ({
+  //       title: item.title,
+  //       description: item.description,
+  //       image: item.images,
+  //     }));
+  //   },
+  // },
 };
+
+// https://dummyjson.com/products?limit=3 )
 </script>
 <style lang=""></style>
